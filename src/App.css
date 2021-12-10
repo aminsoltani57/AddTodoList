@@ -1,0 +1,105 @@
+.App{
+    display: flex;
+    flex-direction: column;
+  margin-top: 20px;
+    align-items: center;
+    width: 100vw;
+    padding: 10px;
+}
+.App h1{
+    margin-bottom: 30px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 4px;
+    width: 40rem;
+   
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    margin: 10px 0;
+}
+.completed{
+    text-decoration: line-through;
+    color: #ccc;
+}
+input{
+    border: 1px solid #ccc;
+    padding: 5px 3px;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+}
+input:focus{
+    border: 2px solid blueviolet;
+
+}
+.formcontrol{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20rem;
+    margin-bottom: 20px;
+}
+.btn{
+    color: #6d28d9;
+    background-color: #fff;
+    border: 1px solid #6d28d9;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.remove{
+    color: rgb(236, 68, 68);
+    border: 1px solid rgb(236, 68, 68);
+    margin-left: 10px;
+}
+.addTodo{
+    background-color: #6d28d9;
+    color: #fff;
+}
+.updateTodo{
+    background: #6d28d9;
+    color: #fff;
+}
+.todoText{
+    cursor: pointer;
+    font-weight: bold;
+}
+header{
+    display: flex;
+align-items: center;
+margin-bottom: 30px;
+
+}
+header span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    background-color:#d0c7f7 ;
+    /* put circle border on things with 50% border-radius  */
+    border-radius: 50%;
+display: flex;
+    color: #6d28d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin-right: 20px;
+
+}
+.select{
+    width: 150px;
+    margin-left: 10px;
+}
