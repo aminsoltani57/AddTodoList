@@ -1,10 +1,16 @@
-//App>todoApp>Todolist>TodoForm>TODO
-import TodoApp from "./components/TodoApp"
+// //App>todoApp>Todolist>TodoForm>TODO
+// import TodoApp from "./components/TodoApp"
+
+import ExpenceApp from "./components/ExpenceApp";
+
 import "./App.css";
 function App()  {
     return (<div className="App">
-        <div><h1> TodoList App - saheb</h1></div><div>
-    <TodoApp /> </div>
+        <header>
+           <h2>Expence tracker</h2> 
+        </header>
+    <ExpenceApp />
+
     </div>  );
 }
  

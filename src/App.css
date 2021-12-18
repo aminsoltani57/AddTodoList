@@ -1,105 +1,117 @@
 .App{
+    background-color: #f6f6f6;
+    color: #0d1d2c;
     display: flex;
     flex-direction: column;
-  margin-top: 20px;
     align-items: center;
-    width: 100vw;
-    padding: 10px;
+  
+    height: 100vh;
+    width: 100%;
+    padding-top: 300px;
+    font-family: Montserrat;
 }
-.App h1{
-    margin-bottom: 30px;
+.topSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 300px;
     background-color: #fff;
-    border: 1px solid #ccc;
+    padding: 10px;
     border-radius: 5px;
-    padding: 4px;
-    width: 40rem;
-   
+    border: 1px solid #ccc;
 }
-.todo{
+.resultSection{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    width: 20rem;
-    margin: 10px 0;
+    justify-content: space-between;
 }
-.completed{
-    text-decoration: line-through;
-    color: #ccc;
+.Expensebox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+   width: 135px;
+   height: 60px;
+   margin: 10px;
+}
+.Expensebox span{
+    color: green;
+    font-weight: bold;
+}
+.btn{
+    outline: none;
+    padding: 5px 10px;
+    background-color: #ede9fe;
+    color: #6d28d9;
+    border-radius: 5px;
+    border: 1px solid #6d28d9;
+}
+.primary{
+    color: #fff;
+    border: none;
+    background-color: #6d28d9;
+    padding:8px 10px;
+  
+}
+.cancle{
+    border: 1px solid #dc2626;
+    color: #dc2626;
+    background-color: #fff;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 input{
     border: 1px solid #ccc;
-    padding: 5px 3px;
-    border-radius: 5px;
+    padding: 10px 12px;
     outline: none;
-    width: 200px;
+    border-radius: 5px;
 }
-input:focus{
-    border: 2px solid blueviolet;
-
+/* how to style special type of one class [type:"   "] */
+input[type:"radio"]{
+    margin-left:10px;
 }
-.formcontrol{
+.radioBox{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-between;
-    width: 20rem;
-    margin-bottom: 20px;
-}
-.btn{
-    color: #6d28d9;
-    background-color: #fff;
-    border: 1px solid #6d28d9;
-    border-radius: 5px;
-    outline: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-.remove{
-    color: rgb(236, 68, 68);
-    border: 1px solid rgb(236, 68, 68);
-    margin-left: 10px;
-}
-.addTodo{
-    background-color: #6d28d9;
-    color: #fff;
-}
-.updateTodo{
-    background: #6d28d9;
-    color: #fff;
-}
-.todoText{
-    cursor: pointer;
-    font-weight: bold;
-}
-header{
-    display: flex;
-align-items: center;
-margin-bottom: 30px;
-
-}
-header span{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
     font-size: 14px;
-    background-color:#d0c7f7 ;
-    /* put circle border on things with 50% border-radius  */
-    border-radius: 50%;
-display: flex;
-    color: #6d28d9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    margin-right: 20px;
-
 }
-.select{
-    width: 200px;
-    margin-left: 10px;
+.radioBox lable{
+    margin-left: 3px;
+    font-size: 14px;
+}
+.transaction{
+    border-radius: 5px;
+    background-color: #f4f4f5;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+    display: flex;
+    /* in flex row: justify contect(column) */
+    justify-content: space-between;
+    /* border-right or border-left: for part of border */
+    border-right: 4px solid green;
+}
+input.search{
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px 12px;
+    background-color: #efefef;
+    width:90%;
+    margin: 20px 0;
 }
